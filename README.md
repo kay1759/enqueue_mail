@@ -9,7 +9,7 @@ The package can be installed by adding `enqueue_mail` to your list of dependenci
 ```elixir
 def deps do
   [
-    {:enqueue_mail, "~> 0.1.0"}
+    {:enqueue_mail, "~> 0.1.2"}
   ]
 end
 ```

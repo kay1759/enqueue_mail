@@ -8,8 +8,8 @@ defmodule EnqueueMail.MixProject do
   def project do
     [
       app: :enqueue_mail,
-      version: "0.1.1",
-      elixir: "~> 1.8",
+      version: "0.1.2",
+      elixir: "~> 1.14",
       description: @description,
       package: package(),
       start_permanent: Mix.env() == :prod,
@@ -36,10 +36,10 @@ defmodule EnqueueMail.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:amqp, "~> 1.1"},
-      {:exprotobuf, "~> 1.2.9"},
-      {:ex_doc, "~> 0.19.3", only: :dev},
-      {:credo, "~> 1.0", only: [:dev, :test], runtime: false}
+      {:amqp, "~> 3.1"},
+      {:exprotobuf, "~> 1.2.17"},
+      {:ex_doc, "~> 0.27", only: :dev},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
     ]
   end
 end
